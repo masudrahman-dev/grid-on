@@ -1,31 +1,30 @@
 import React from "react";
-
-
+import MainContainer from "./components/main-comtainer/MainContainer";
 
 const App = () => {
   return (
-    <div>
-
-      <article className="prose lg:prose-xl">
-        <h1>Garlic bread with cheese: What the science tells us</h1>
-        <p className="col-count-3 text-3xl">
-          For years parents have espoused the health benefits of eating garlic
-          bread with cheese to their children, with the food earning such an
-          iconic status in our culture that kids will often dress up as warm,
-          cheesy loaf for Halloween. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quaerat, repellendus. Molestiae ipsum repudiandae,
-          placeat odit autem repellat blanditiis sit, ea harum ex reprehenderit
-          ducimus velit numquam fugiat, voluptatem officiis pariatur.
-        </p>
-        <p>
-          But a recent study shows that the celebrated appetizer may be linked
-          to a series of rabies cases springing up around the country.
-        </p>
-      </article>
-      <select className="rounded-full px-4 py-3"></select>
+    <MainContainer>
+      <div className="grid-row-10  grid grid-cols-1 gap-10  border lg:grid-cols-12 ">
+        <div className="col-span-full border ">
 
 
-    </div>
+
+
+
+
+        </div>
+        <div className="col-span-9    border ">item2</div>
+        <div className="col-span-3  row-span-2  border ">item3</div>
+        <div className="col-span-4    border ">item4</div>
+        <div className="col-span-5    border ">item5</div>
+        <div className="col-span-full border ">item6</div>
+        <div className="col-span-4 border ">item7</div>
+        <div className="col-span-5 row-span-2  border ">item8</div>
+        <div className="col-span-3  border ">item9</div>
+        <div className="col-span-4  border ">item10</div>
+        <div className="col-span-3  border">item11</div>
+      </div>
+    </MainContainer>
   );
 };
 
