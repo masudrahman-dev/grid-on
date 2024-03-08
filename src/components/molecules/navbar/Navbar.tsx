@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../../icons/logo-icon/Logo";
 import Vl from "../../atoms/vl/Vl";
-import BellAlertIcon from "../../icons/bell-alert-icon/BellAlertIcon";
-import Avatar from "../../atoms/avatar/Avatar";
+
+import Profile from "../profile/Profile";
 import Menu from "../menu/Menu";
 
 const Navbar = () => {
@@ -28,15 +28,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="flex items-center">
-        <BellAlertIcon />
-        <Vl />
-        <div className="flex items-center gap-4">
-          <Avatar />
-          <h2 className="text-paragraph font-medium">Annette Black</h2>
-          <Menu />
-        </div>
-      </div>
+      <Profile title={"Annette Black"} subtitle="New York, NY" />
+
+      <Menu />
     </nav>
   );
 };
