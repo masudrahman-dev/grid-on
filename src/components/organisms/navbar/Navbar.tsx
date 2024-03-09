@@ -7,6 +7,20 @@ import Profile from "../../molecules/profile/Profile";
 import Menu from "../../molecules/menu/Menu";
 
 const Navbar = () => {
+  const menuItems = (
+    <ul className="hidden  items-center space-x-12 lg:flex">
+      <li className="text-paragraph font-medium text-gray hover:text-primary">
+        <a href="#">Explore</a>
+      </li>
+      <li className="text-paragraph font-medium text-gray hover:text-primary">
+        <a href="#">My Clients</a>
+      </li>
+      <li className="text-paragraph font-medium text-gray hover:text-primary">
+        <a href="#">Blog</a>
+      </li>
+    </ul>
+  );
+
   return (
     <nav className="flex items-center justify-between ">
       <div className="flex  items-center">
@@ -17,29 +31,15 @@ const Navbar = () => {
           </h1>
         </div>
         <Vl />
-        <ul className="flex  items-center space-x-12">
-          <li className="text-paragraph font-medium text-gray hover:text-primary">
-            <a href="#">Explore</a>
-          </li>
-          <li className="text-paragraph font-medium text-gray hover:text-primary">
-            <a href="#">My Clients</a>
-          </li>
-          <li className="text-paragraph font-medium text-gray hover:text-primary">
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+        {menuItems}
       </div>
-
       <div className="flex items-center gap-6">
         <div className="flex items-center gap-4">
           <BellAlertIcon />
           <Vl />
-          <Profile
-            title={"Annette Black"}
-            // subtitle="New York, NY"
-            // subTitleIcon={<LocationIcon />}
-          />
+          <Profile title={"Annette Black"} />
         </div>
+
         <Menu />
       </div>
     </nav>

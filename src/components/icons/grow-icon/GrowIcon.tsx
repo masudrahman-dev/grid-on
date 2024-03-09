@@ -13,16 +13,16 @@ const GrowIcon = () => {
         <path
           d="M20 7L12.6591 14.3409L8.79545 10.4773L3 16.2727"
           stroke="#00D555"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M15.3636 7H20V11.6364"
           stroke="#00D555"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     </div>
@@ -40,15 +40,15 @@ export default GrowIcon;
   <path
     d="M20 7L12.6591 14.3409L8.79545 10.4773L3 16.2727"
     stroke="#00D555"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   />
   <path
     d="M15.3636 7H20V11.6364"
     stroke="#00D555"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   />
 </svg>;

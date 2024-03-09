@@ -24,6 +24,7 @@ import watchImg from "../src/assets/watch.png";
 import Review from "./components/organisms/reviw/Review";
 import PlusOutlineIcon from "./components/icons/plus-outline-icon/PlusOutlineIcon";
 import ImageUpload from "./components/organisms/image-upload/ImageUpload";
+import clx from "./components/utils/clx";
 
 const App = () => {
   const [imageSrc, setImageSrc] = useState<string | ArrayBuffer | null>(null);
@@ -54,51 +55,54 @@ const App = () => {
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
   };
+
+  const boxStyle =
+    "rounded   bg-white lg:p-base p-2 m-2 lg:m-0 lg:col-span-full";
   return (
     <MainContainer>
-      <div className="grid-row-12  grid grid-cols-1 gap-10   lg:grid-cols-12 ">
-        <div className="col-span-full  rounded bg-white p-base">
+      <div className="lg:grid-row-12  grid grid-cols-1 gap-10   lg:grid-cols-12 ">
+        <div className={clx("", boxStyle)}>
           <Navbar />
         </div>
-        <div className="col-span-9    rounded bg-white p-base ">
+        {/* <div className="rounded    bg-white p-base lg:col-span-9 ">
           <TaxReturn />
         </div>
-        <div className="col-span-3 row-span-3     rounded bg-white ">
+        <div className="rounded bg-white     lg:col-span-3 lg:row-span-3 ">
           <ProsMilestone />
         </div>
-        <div className="col-span-4  row-span-2   rounded bg-white p-base  ">
+        <div className="rounded  bg-white   p-base lg:col-span-4 lg:row-span-2  ">
           <CookiesCard />
         </div>
 
-        <div className="col-span-5   row-span-2   rounded bg-white p-base  ">
+        <div className="rounded   bg-white   p-base lg:col-span-5 lg:row-span-2  ">
           <TaxReturn2 />
         </div>
-        <div className="group col-span-full  rounded bg-white p-base ">
+        <div className="group rounded  bg-white p-base lg:col-span-full ">
           <TaxReturn3 />
         </div>
-        <div className="col-span-4    bg-white ">
+        <div className="bg-white    lg:col-span-4 ">
           <CertifiedAccountant />
         </div>
-        <div className="col-span-5 row-span-4  rounded bg-white p-base ">
+        <div className="rounded bg-white  p-base lg:col-span-5 lg:row-span-4 ">
           <Transactions />
         </div>
         <div
           onDrop={handleDrop}
           onDragOver={handleDragOver}
-          className="col-span-3 row-span-2  rounded bg-white p-2 "
+          className="rounded bg-white  p-2 lg:col-span-3 lg:row-span-2 "
         >
           <ImageUpload handleChange={handleChange} />
         </div>
-        <div className="col-span-4 row-span-3 rounded  bg-white p-base  ">
+        <div className="rounded bg-white p-base  lg:col-span-4 lg:row-span-3  ">
           <Review />
         </div>
-        <div className="col-span-3 row-span-2  rounded bg-white  ">
+        <div className="rounded bg-white  lg:col-span-3 lg:row-span-2  ">
           <img
             className="h-[200px] w-[290px] rounded"
             src={imageSrc ? imageSrc?.toString() : watchImg}
             alt="Uploaded"
           />
-        </div>
+        </div> */}
       </div>
     </MainContainer>
   );

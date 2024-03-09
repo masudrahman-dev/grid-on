@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import BellAlertIcon from "../../icons/bell-alert-icon/BellAlertIcon";
 import Vl from "../../atoms/vl/Vl";
 import Avatar from "../../atoms/avatar/Avatar";
+import clx from "../../utils/clx";
 
 interface ProfileProps {
   title: string;
@@ -9,6 +10,7 @@ interface ProfileProps {
   src?: string;
   subTitleIcon?: ReactNode;
   isActive?: boolean;
+  className?: string;
 }
 
 const Profile: React.FC<ProfileProps> = ({
@@ -17,12 +19,13 @@ const Profile: React.FC<ProfileProps> = ({
   src,
   subTitleIcon,
   isActive,
+  className,
 }) => {
   return (
-    <div className="flex items-center gap-4">
+    <div className={clx("hidden items-center gap-4 lg:flex", className)}>
       <Avatar src={src} isActive={isActive} />
-      <div className="w-[118px]">
-        <h2 className="text-paragraph font-medium">{title}</h2>
+      <div className="hidden w-[118px] lg:block">
+        <h2 className="text-paragraph  font-medium">{title}</h2>
         {subtitle && (
           <div className="inline-flex items-center gap-2">
             {subTitleIcon && (

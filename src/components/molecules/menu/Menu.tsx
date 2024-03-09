@@ -6,19 +6,23 @@ import {
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import React from "react";
 import ChevronDownIcon from "../../icons/chevron-down-icon/ChevronDownIcon";
+
+import avatarImg from "../../../assets/avatar.png";
+import Avatar from "../../atoms/avatar/Avatar";
 const Menu = () => {
   const [bookmarksChecked, setBookmarksChecked] = React.useState(true);
   const [urlsChecked, setUrlsChecked] = React.useState(false);
   const [person, setPerson] = React.useState("pedro");
-
+  console.log("avatarImg :>> ", avatarImg);
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
-        <button
-          className=" inline-flex h-[35px] w-[35px] items-center justify-center rounded-full bg-white  outline-none transition-colors delay-100  hover:bg-primary hover:fill-white hover:text-white "
-          aria-label="Customise options"
-        >
-          <ChevronDownIcon />
+        <button className="  lg:h-[35px] lg:w-[35px] items-center  justify-center rounded-full bg-white outline-none transition-colors  delay-100 hover:bg-primary hover:fill-white  hover:text-white focus:outline lg:inline-flex ">
+          <span className="hidden lg:block">
+            <ChevronDownIcon />
+          </span>
+
+          <Avatar className=" lg:hidden " src={avatarImg} />
         </button>
       </DropdownMenu.Trigger>
 

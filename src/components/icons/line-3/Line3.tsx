@@ -12,20 +12,20 @@ const Line3 = () => {
       <path
         d="M1 1V17"
         stroke="#E7E9F0"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5 1V17"
         stroke="#E7E9F0"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M9 1V17"
         stroke="#E7E9F0"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
