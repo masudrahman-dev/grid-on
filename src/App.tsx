@@ -10,11 +10,17 @@ import TaxReturn2 from "./components/organisms/tax-return-2/TaxReturn2";
 import TaxReturn3 from "./components/organisms/tax-return-3/TaxReturn3";
 import CrossIcon from "./components/icons/cross-icon/CrossIcon";
 import Button from "./components/atoms/button/Button";
+import CertifiedAccountant from "./components/organisms/cartified-accountant/CertifiedAccountant";
+import ThreeDotIcon from "./components/icons/three-dot-icon/ThreeDotIcon";
+import ClockIcon from "./components/icons/clock-icon/ClockIcon";
+import GrowIcon from "./components/icons/grow-icon/GrowIcon";
+import Line from "./components/atoms/line/Line";
+import Hr from "./components/atoms/hr/Hr";
 
 const App = () => {
   return (
     <MainContainer>
-      <div className="grid-row-10  grid grid-cols-1 gap-10   lg:grid-cols-12 ">
+      <div className="grid-row-11  grid grid-cols-1 gap-10   lg:grid-cols-12 ">
         <div className="col-span-full  rounded bg-white p-base">
           <Navbar />
         </div>
@@ -35,21 +41,30 @@ const App = () => {
           <TaxReturn3 />
         </div>
         <div className="col-span-4  row-span-1  bg-white ">
-          <div className="flex items-center justify-between rounded bg-primary p-6">
-            <div className="space-x-6 flex items-center">
-              <Button className="rounded-full bg-white px-4 py-2 text-primary">
-                CPA
-              </Button>
-              <p className="text-sm font-medium text-white">
-                Certified Public Accountant
+          <CertifiedAccountant />
+        </div>
+        <div className="col-span-5 row-span-2  rounded bg-white p-base ">
+          <div className="space-y-8">
+            <div className="flex items-center justify-between">
+              <p className="min-w-[201px] text-base font-semibold">
+                Latest transactions
               </p>
+              <div className="flex items-center gap-2">
+                <p className="h-5 w-5 rounded-full bg-blue-light text-paragraph">
+                  $
+                </p>
+                <p className="text-secondary">+8,6%</p>
+                <GrowIcon />
+              </div>
             </div>
-            <button className="inline-flex items-center justify-start rounded-full bg-white p-1 text-paragraph opacity-80">
-              <CrossIcon className="h-4 w-4 stroke-2" />
-            </button>
+            <Hr />
+            <Line />
+            <Hr />
+            <Line />
+            <Hr />
+            <Line />
           </div>
         </div>
-        <div className="col-span-5 row-span-2  border ">item8</div>
         <div className="col-span-3  border ">item9</div>
         <div className="col-span-4  border ">item10</div>
         <div className="col-span-3  border">item11</div>

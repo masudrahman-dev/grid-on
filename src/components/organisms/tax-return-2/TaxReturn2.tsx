@@ -3,6 +3,7 @@ import ClockIcon from "../../icons/clock-icon/ClockIcon";
 import ThreeDotIcon from "../../icons/three-dot-icon/ThreeDotIcon";
 import { v4 } from "uuid";
 import Button from "../../atoms/button/Button";
+import Hr from "../../atoms/hr/Hr";
 const items = [
   "Professional",
   "New York, NY",
@@ -25,7 +26,7 @@ const TaxReturn2 = () => {
         </div>
         <ThreeDotIcon />
       </div>
-      <div className="h-[1px] w-full rounded-full bg-gray " />
+      <Hr />
 
       <div className="flex flex-wrap gap-2">
         {items.map((item) => {
@@ -36,8 +37,7 @@ const TaxReturn2 = () => {
           );
         })}
       </div>
-      <div className="h-[1px] w-full rounded-full bg-gray" />
-
+      <Hr />
       <div className="flex items-center justify-between space-x-6 ">
         <div className="">
           <p className="text-base font-medium">$1000</p>
