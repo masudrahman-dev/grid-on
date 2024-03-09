@@ -21,7 +21,7 @@ const Profile: React.FC<ProfileProps> = ({
   return (
     <div className="flex items-center gap-4">
       <Avatar src={src} isActive={isActive} />
-      <div>
+      <div className="w-[118px]">
         <h2 className="text-paragraph font-medium">{title}</h2>
         {subtitle && (
           <div className="inline-flex items-center gap-2">

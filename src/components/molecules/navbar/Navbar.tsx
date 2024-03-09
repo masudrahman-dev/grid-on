@@ -9,7 +9,7 @@ import BellAlertIcon from "../../icons/bell-alert-icon/BellAlertIcon";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between ">
+    <nav className="flex items-center justify-between ">
       <div className="flex  items-center">
         <div className="flex items-center gap-2">
           <Logo />
@@ -31,17 +31,18 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex items-center gap-4">
-        <BellAlertIcon />
-        <Vl />
-        <Profile
-          title={"Annette Black"}
-          // subtitle="New York, NY"
-          // subTitleIcon={<LocationIcon />}
-        />
+      <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4">
+          <BellAlertIcon />
+          <Vl />
+          <Profile
+            title={"Annette Black"}
+            // subtitle="New York, NY"
+            // subTitleIcon={<LocationIcon />}
+          />
+        </div>
+        <Menu />
       </div>
-
-      <Menu />
     </nav>
   );
 };

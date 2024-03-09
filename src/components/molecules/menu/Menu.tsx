@@ -16,7 +16,7 @@ const Menu = () => {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
         <button
-          className=" inline-flex h-[35px] w-[35px] items-center justify-center rounded-full bg-white   outline-none hover:bg-violet3 "
+          className=" inline-flex h-[35px] w-[35px] items-center justify-center rounded-full bg-white  outline-none transition-colors delay-100  hover:bg-primary hover:fill-white hover:text-white "
           aria-label="Customise options"
         >
           <ChevronDownIcon />

@@ -17,11 +17,11 @@ const App = () => {
           <Navbar />
         </div>
         <div className="col-span-9  row-span-2 rounded bg-white p-base ">
-          <div className="flex items-center gap-12">
+          <div className="flex items-center justify-between gap-12">
             <div className="flex items-center gap-6">
               <Line3 />
               <div>
-                <p className="text-base font-medium">
+                <p className="min-w-[201px] text-base font-medium">
                   Individual tax return 2019
                 </p>
                 <p className="flex gap-2">
@@ -40,10 +40,12 @@ const App = () => {
                 subTitleIcon={<LocationIcon />}
               />
               <Vl />
-              <div className="flex ">
-                <div className="flex gap-6">
-                  <p>$1000</p>
-                  <span>Potential earning</span>
+              <div className="flex items-center space-x-6 ">
+                <div className="">
+                  <p className="text-base font-medium">$1000</p>
+                  <span className="text-nowrap text-paragraph">
+                    Potential earning
+                  </span>
                 </div>
                 <PlusIcon />
               </div>
