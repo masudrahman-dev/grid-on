@@ -12,7 +12,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     <button
       ref={ref}
       className={clx(
-        " inline-flex  items-center justify-center rounded-xl bg-blue-light px-6 py-[14px]  font-medium text-primary transition-colors delay-100 hover:bg-primary hover:text-white",
+        " inline-flex  items-center justify-center rounded-xl bg-blue-light px-6 py-[14px] font-medium  text-primary  transition-colors  duration-300 ease-in-out hover:bg-primary hover:text-white",
         className,
       )}
       type={type}

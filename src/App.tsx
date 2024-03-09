@@ -7,6 +7,7 @@ import ProsMilestone from "./components/organisms/pros-milestone/ProsMilestone";
 
 import CookiesCard from "./components/organisms/cookies-card/CookiesCard";
 import TaxReturn2 from "./components/organisms/tax-return-2/TaxReturn2";
+import TaxReturn3 from "./components/organisms/tax-return-3/TaxReturn3";
 
 const App = () => {
   return (
@@ -28,8 +29,12 @@ const App = () => {
         <div className="col-span-5   row-span-2   rounded bg-white p-base  ">
           <TaxReturn2 />
         </div>
-        <div className="col-span-full border ">item6</div>
-        <div className="col-span-4 border ">item7</div>
+        <div className="group col-span-full row-span-1 bg-white p-base ">
+          <TaxReturn3 />
+        </div>
+        <div className="col-span-4  row-span-1 rounded bg-white p-base ">
+          item7
+        </div>
         <div className="col-span-5 row-span-2  border ">item8</div>
         <div className="col-span-3  border ">item9</div>
         <div className="col-span-4  border ">item10</div>
