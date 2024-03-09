@@ -24,6 +24,7 @@ import Profile from "./components/molecules/profile/Profile";
 import LocationIcon from "./components/icons/location-icon/LocationIcon";
 import StarIcon from "./components/icons/star-icon/StarIcon";
 import Review from "./components/organisms/reviw/Review";
+import PlusOutlineIcon from "./components/icons/plus-outline-icon/PlusOutlineIcon";
 
 const App = () => {
   return (
@@ -65,20 +66,7 @@ const App = () => {
                 <span className=" text-paragraph font-medium">
                   Upload manualy
                 </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="h-5 w-5 fill-white stroke-2 pl-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 4.5v15m7.5-7.5h-15"
-                  />
-                </svg>
+                <PlusOutlineIcon />
               </Button>
             </div>
           </div>

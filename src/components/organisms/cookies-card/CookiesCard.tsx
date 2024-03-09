@@ -4,7 +4,7 @@ import Button from "../../atoms/button/Button";
 
 const CookiesCard = () => {
   return (
-    <>
+    <div className="  flex h-full flex-col ">
       <div className="space-y-8">
         <div className="flex items-center justify-between">
           <p className="text-title font-semibold">We use cookies!</p>
@@ -17,14 +17,16 @@ const CookiesCard = () => {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <div className="space-y-2">
+      </div>
+      <div className="relative flex-1">
+        <div className="absolute bottom-0 left-0 right-0  space-y-2  ">
           <Button className="w-full ">Configure cookies</Button>
           <Button className="w-full bg-primary text-white hover:bg-blue-light hover:text-primary">
             Confirm
           </Button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
