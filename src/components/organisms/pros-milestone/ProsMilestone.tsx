@@ -6,7 +6,7 @@ import useMeasure from "../../../hooks/useMeasure/useMeasure";
 
 const ProsMilestone = () => {
   const { ref, divWidth } = useMeasure();
-  console.log("divWidth :>> ", divWidth);
+
   return (
     <div ref={ref} className="flex h-full w-full flex-col">
       <div className="space-y-8 p-base ">
@@ -17,8 +17,8 @@ const ProsMilestone = () => {
 
         <ProjectsDone />
       </div>
-      <div className="flex-1 relative">
-        <div className="pt-[135px] absolute left-0 right-0 bottom-0">
+      <div className="relative flex-1">
+        <div className="absolute bottom-0 left-0 right-0 pt-[135px]">
           <ProsMilestoneChart width={divWidth} />
         </div>
       </div>
