@@ -56,7 +56,7 @@ const App = () => {
   };
 
   const boxStyle =
-    "rounded bg-white bg-white lg:p-base p-2 mx-2 lg:m-0 ";
+    "rounded bg-white bg-white lg:p-base lg:pb-5 p-2 mx-2 lg:m-0 ";
   return (
     <MainContainer>
       <div className="lg:grid-row-12  grid grid-cols-1 gap-8  lg:grid-cols-12 lg:gap-10 ">
@@ -67,18 +67,18 @@ const App = () => {
           <TaxReturn />
         </div>
 
-        <div className="rounded bg-white     lg:col-span-3 lg:row-span-3 ">
+        <div className={clx("lg:col-span-3 lg:row-span-3", boxStyle)}>
           <ProsMilestone />
         </div>
 
-        <div className={clx("col-span-4 lg:row-span-2 ", boxStyle)}>
+        <div className={clx("lg:col-span-4 lg:row-span-2 ", boxStyle)}>
           <CookiesCard />
         </div>
 
         <div className="rounded   bg-white   p-base lg:col-span-5 lg:row-span-2  ">
           <TaxReturn2 />
         </div>
-
+    
         <div className={clx("group lg:col-span-full ", boxStyle)}>
           <TaxReturn3 />
         </div>
@@ -111,7 +111,7 @@ const App = () => {
               alt="Uploaded"
             />
           </div>
-        </div>
+        </div> 
       </div>
     </MainContainer>
   );
