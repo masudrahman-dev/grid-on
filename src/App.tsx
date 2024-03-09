@@ -16,11 +16,15 @@ import ClockIcon from "./components/icons/clock-icon/ClockIcon";
 import GrowIcon from "./components/icons/grow-icon/GrowIcon";
 import Line from "./components/atoms/line/Line";
 import Hr from "./components/atoms/hr/Hr";
+import Transactions from "./components/organisms/transactions/Transactions";
+import PlusIcon from "./components/icons/plus-icon/PlusIcon";
+
+import watchImg from "../src/assets/watch.png";
 
 const App = () => {
   return (
     <MainContainer>
-      <div className="grid-row-11  grid grid-cols-1 gap-10   lg:grid-cols-12 ">
+      <div className="grid-row-12  grid grid-cols-1 gap-10   lg:grid-cols-12 ">
         <div className="col-span-full  rounded bg-white p-base">
           <Navbar />
         </div>
@@ -43,31 +47,43 @@ const App = () => {
         <div className="col-span-4  row-span-1  bg-white ">
           <CertifiedAccountant />
         </div>
-        <div className="col-span-5 row-span-2  rounded bg-white p-base ">
-          <div className="space-y-8">
-            <div className="flex items-center justify-between">
-              <p className="min-w-[201px] text-base font-semibold">
-                Latest transactions
-              </p>
-              <div className="flex items-center gap-2">
-                <p className="h-5 w-5 rounded-full bg-blue-light text-paragraph">
-                  $
-                </p>
-                <p className="text-secondary">+8,6%</p>
-                <GrowIcon />
+        <div className="col-span-5 row-span-4  rounded bg-white p-base ">
+          <Transactions />
+        </div>
+        <div className="col-span-3 row-span-2  rounded bg-white p-2 ">
+          <div className=" flex h-full w-full items-center justify-center rounded border border-dashed border-gray ">
+            <div className=" ">
+              <div className="pb-4">
+                <p className="text-sm font-medium">Drop document here</p>
+                <p className="text-paragraph text-gray">or upload it manualy</p>
               </div>
+              <Button className="rounded-full  bg-primary px-4 py-2 text-white">
+                <span className=" text-paragraph font-medium">
+                  {" "}
+                  Upload manualy
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="h-5 w-5 pl-1 stroke-2 fill-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </Button>
             </div>
-            <Hr />
-            <Line />
-            <Hr />
-            <Line />
-            <Hr />
-            <Line />
           </div>
         </div>
-        <div className="col-span-3  border ">item9</div>
-        <div className="col-span-4  border ">item10</div>
-        <div className="col-span-3  border">item11</div>
+        <div className="col-span-4 row-span-3  rounded bg-white  ">item10</div>
+        <div className="col-span-3 row-span-2  rounded bg-white  ">
+          <img className="" src={watchImg} alt="watch" />
+        </div>
       </div>
     </MainContainer>
   );
