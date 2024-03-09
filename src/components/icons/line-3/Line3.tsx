@@ -1,31 +1,20 @@
 import React from "react";
+import clx from "../../utils/clx";
 
-const Line3 = () => {
+const Line3 = ({ className }: { className?: string }) => {
   return (
     <svg
-      width="10"
-      height="18"
-      viewBox="0 0 10 18"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={clx("h-6 w-6", className)}
     >
       <path
-        d="M1 1V17"
-        stroke="#E7E9F0"
         strokeLinecap="round"
         strokeLinejoin="round"
-      />
-      <path
-        d="M5 1V17"
-        stroke="#E7E9F0"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M9 1V17"
-        stroke="#E7E9F0"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
       />
     </svg>
   );
