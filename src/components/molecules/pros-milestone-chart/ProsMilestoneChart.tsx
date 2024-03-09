@@ -48,7 +48,7 @@ const ProsMilestoneChart = ({ width }: { width: number }) => {
   return (
     <AreaChart
       width={width + 10}
-      height={300}
+      height={187}
       data={data}
       margin={{ top: 0, left: 0, bottom: 0, right: 10 }}
     >

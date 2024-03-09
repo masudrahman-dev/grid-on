@@ -8,7 +8,7 @@ const ProsMilestone = () => {
   const { ref, divWidth } = useMeasure();
   console.log("divWidth :>> ", divWidth);
   return (
-    <div ref={ref}>
+    <div ref={ref} className="w-full">
       <div className="space-y-8 p-base ">
         <div className="flex items-center justify-between">
           <h1 className="text-title">Pros milestines</h1>

@@ -33,7 +33,7 @@ const TaxReturn = () => {
         <div className="flex items-center space-x-6 ">
           <div className="">
             <p className="text-base font-medium">$1000</p>
-            <span className="text-nowrap text-paragraph">
+            <span className="text-nowrap text-paragraph text-gray">
               Potential earning
             </span>
           </div>
