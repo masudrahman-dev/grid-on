@@ -56,11 +56,11 @@ const App = () => {
   };
 
   const boxStyle =
-    "rounded bg-white    bg-white lg:p-base p-2 mx-2 lg:m-0 lg:col-span-full";
+    "rounded bg-white bg-white lg:p-base p-2 mx-2 lg:m-0 ";
   return (
     <MainContainer>
       <div className="lg:grid-row-12  grid grid-cols-1 gap-8  lg:grid-cols-12 lg:gap-10 ">
-        <div className={clx("", boxStyle)}>
+        <div className={clx("col-span-full", boxStyle)}>
           <Navbar />
         </div>
         <div className={clx("  lg:col-span-9  ", boxStyle)}>
@@ -71,7 +71,7 @@ const App = () => {
           <ProsMilestone />
         </div>
 
-        <div className={clx("g:col-span-4 lg:row-span-2 ", boxStyle)}>
+        <div className={clx("col-span-4 lg:row-span-2 ", boxStyle)}>
           <CookiesCard />
         </div>
 
