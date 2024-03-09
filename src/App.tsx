@@ -1,5 +1,6 @@
 import React, {
   ChangeEvent,
+  DragEvent,
   ReactNode,
   useEffect,
   useRef,
@@ -14,8 +15,6 @@ import ProsMilestone from "./components/organisms/pros-milestone/ProsMilestone";
 import CookiesCard from "./components/organisms/cookies-card/CookiesCard";
 import TaxReturn2 from "./components/organisms/tax-return-2/TaxReturn2";
 import TaxReturn3 from "./components/organisms/tax-return-3/TaxReturn3";
-
-import Button from "./components/atoms/button/Button";
 import CertifiedAccountant from "./components/organisms/cartified-accountant/CertifiedAccountant";
 
 import Transactions from "./components/organisms/transactions/Transactions";
@@ -32,12 +31,27 @@ const App = () => {
     const file = e.target.files?.[0];
     if (file) {
       const reader = new FileReader();
-      console.log("reader :>> ", reader);
       reader.onloadend = () => {
         setImageSrc(reader.result);
       };
       reader.readAsDataURL(file);
     }
+  };
+
+  const handleDrop = (e: DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const file = e.dataTransfer.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImageSrc(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
   };
   return (
     <MainContainer>
@@ -67,7 +81,11 @@ const App = () => {
         <div className="col-span-5 row-span-4  rounded bg-white p-base ">
           <Transactions />
         </div>
-        <div className="col-span-3 row-span-2  rounded bg-white p-2 ">
+        <div
+          onDrop={handleDrop}
+          onDragOver={handleDragOver}
+          className="col-span-3 row-span-2  rounded bg-white p-2 "
+        >
           <div className=" flex h-full w-full flex-col items-center justify-center rounded border border-dashed border-gray p-11 ">
             <div className="pb-4">
               <p className="text-sm font-medium">Drop document here</p>
@@ -85,6 +103,7 @@ const App = () => {
                 type="file"
                 className=" hidden "
                 id="upload"
+                accept="*"
                 onChange={handleChange}
               />
 
