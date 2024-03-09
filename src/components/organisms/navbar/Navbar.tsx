@@ -2,10 +2,9 @@ import React from "react";
 import Logo from "../../icons/logo-icon/Logo";
 import Vl from "../../atoms/vl/Vl";
 
-import Profile from "../profile/Profile";
-import Menu from "../menu/Menu";
-import LocationIcon from "../../icons/location-icon/LocationIcon";
 import BellAlertIcon from "../../icons/bell-alert-icon/BellAlertIcon";
+import Profile from "../../molecules/profile/Profile";
+import Menu from "../../molecules/menu/Menu";
 
 const Navbar = () => {
   return (
