@@ -23,6 +23,7 @@ import watchImg from "../src/assets/watch.png";
 
 import Review from "./components/organisms/reviw/Review";
 import PlusOutlineIcon from "./components/icons/plus-outline-icon/PlusOutlineIcon";
+import ImageUpload from "./components/organisms/image-upload/ImageUpload";
 
 const App = () => {
   const [imageSrc, setImageSrc] = useState<string | ArrayBuffer | null>(null);
@@ -86,30 +87,7 @@ const App = () => {
           onDragOver={handleDragOver}
           className="col-span-3 row-span-2  rounded bg-white p-2 "
         >
-          <div className=" flex h-full w-full flex-col items-center justify-center rounded border border-dashed border-gray p-11 ">
-            <div className="pb-4">
-              <p className="text-sm font-medium">Drop document here</p>
-              <p className="text-paragraph text-gray">or upload it manualy</p>
-            </div>
-
-            <label
-              id="upload"
-              className="flex rounded-full  bg-primary px-4 py-2 text-white"
-            >
-              <span className=" text-paragraph font-medium">
-                Upload manualy
-              </span>
-              <input
-                type="file"
-                className=" hidden "
-                id="upload"
-                accept="*"
-                onChange={handleChange}
-              />
-
-              <PlusOutlineIcon />
-            </label>
-          </div>
+          <ImageUpload handleChange={handleChange} />
         </div>
         <div className="col-span-4 row-span-3 rounded  bg-white p-base  ">
           <Review />
