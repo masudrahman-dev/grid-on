@@ -17,7 +17,7 @@ const ProsMilestone = () => {
 
         <ProjectsDone />
       </div>
-      <div>
+      <div className="pt-[135px]">
         <ProsMilestoneChart width={divWidth} />
       </div>
     </div>
