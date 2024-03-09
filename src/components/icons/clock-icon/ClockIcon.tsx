@@ -2,23 +2,20 @@ import React from "react";
 
 const ClockIcon = () => {
   return (
-    <div>
-      <svg
-        width="14"
-        height="15"
-        viewBox="0 0 14 15"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6.63332 13.2754C9.85498 13.2754 12.4667 10.6637 12.4667 7.44204C12.4667 4.22038 9.85498 1.6087 6.63332 1.6087C3.41166 1.6087 0.799988 4.22038 0.799988 7.44204C0.799988 10.6637 3.41166 13.2754 6.63332 13.2754Z"
-          stroke="#8E94A7"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className="h-[20px] w-[20px]"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+      />
+    </svg>
   );
 };
 

@@ -4,6 +4,8 @@ import Vl from "../../atoms/vl/Vl";
 
 import Profile from "../profile/Profile";
 import Menu from "../menu/Menu";
+import LocationIcon from "../../icons/location-icon/LocationIcon";
+import BellAlertIcon from "../../icons/bell-alert-icon/BellAlertIcon";
 
 const Navbar = () => {
   return (
@@ -28,7 +30,16 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <Profile title={"Annette Black"} subtitle="New York, NY" />
+
+      <div className="flex items-center gap-4">
+        <BellAlertIcon />
+        <Vl />
+        <Profile
+          title={"Annette Black"}
+          // subtitle="New York, NY"
+          // subTitleIcon={<LocationIcon />}
+        />
+      </div>
 
       <Menu />
     </nav>
