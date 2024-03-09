@@ -19,7 +19,7 @@ const CookiesCard = () => {
         </p>
       </div>
       <div className="flex-1 lg:relative">
-        <div className="bottom-0 left-0 right-0 space-x-2  lg:absolute lg:space-x-0 lg:space-y-2  ">
+        <div className="bottom-0 left-0 right-0 space-x-2 flex justify-between  lg:absolute lg:space-x-0 lg:space-y-2  ">
           <Button className="lg:w-full ">Configure cookies</Button>
           <Button className="bg-primary text-white hover:bg-blue-light hover:text-primary lg:w-full">
             Confirm

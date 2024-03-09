@@ -55,15 +55,14 @@ const App = () => {
     e.preventDefault();
   };
 
-  const boxStyle =
-    "rounded bg-white bg-white lg:p-base lg:pb-5 p-2 mx-2 lg:m-0 ";
+  const boxStyle = "rounded bg-white bg-white mx-2 p-2 ";
   return (
     <MainContainer>
-      <div className="lg:grid-row-12  grid grid-cols-1 gap-8  lg:grid-cols-12 lg:gap-10 ">
-        <div className={clx("col-span-full", boxStyle)}>
+      <div className="lg:grid-row-12 grid    grid-cols-1 gap-8 lg:grid-cols-12  lg:gap-10">
+        <div className={clx("col-span-full  lg:p-base ", boxStyle)}>
           <Navbar />
         </div>
-        <div className={clx("  lg:col-span-9  ", boxStyle)}>
+        <div className={clx("  lg:col-span-9  lg:p-base   ", boxStyle)}>
           <TaxReturn />
         </div>
 
@@ -71,39 +70,43 @@ const App = () => {
           <ProsMilestone />
         </div>
 
-        <div className={clx("lg:col-span-4 lg:row-span-2 ", boxStyle)}>
+        <div
+          className={clx("lg:col-span-4 lg:row-span-2  lg:p-base  ", boxStyle)}
+        >
           <CookiesCard />
         </div>
 
-        <div className="rounded   bg-white   p-base lg:col-span-5 lg:row-span-2  ">
+        <div className="mx-2   rounded bg-white p-2  lg:col-span-5 lg:row-span-2 lg:p-base  ">
           <TaxReturn2 />
         </div>
 
-        <div className={clx("group lg:col-span-full ", boxStyle)}>
+        <div className={clx("group  lg:col-span-full  lg:p-base ", boxStyle)}>
           <TaxReturn3 />
         </div>
 
-        <div className={clx("lg:col-span-4", boxStyle)}>
+        <div className={clx("lg:col-span-4 ", boxStyle)}>
           <CertifiedAccountant />
         </div>
 
-        <div className={clx("lg:col-span-5 lg:row-span-4 ", boxStyle)}>
+        <div
+          className={clx("lg:col-span-5 lg:row-span-4  lg:p-base  ", boxStyle)}
+        >
           <Transactions />
         </div>
 
         <div
           onDrop={handleDrop}
           onDragOver={handleDragOver}
-          className=" p-2 lg:col-span-3 lg:row-span-2 "
+          className=" order-11 p-2 lg:order-none lg:col-span-3 lg:row-span-2 "
         >
           <ImageUpload handleChange={handleChange} />
         </div>
 
-        <div className="rounded bg-white p-base  lg:col-span-4 lg:row-span-3  ">
+        <div className="mx-2 rounded bg-white p-3 lg:col-span-4  lg:row-span-3 lg:p-base  ">
           <Review />
         </div>
 
-        <div className=" lg:col-span-3 lg:row-span-2  ">
+        <div className=" order-last pb-5 lg:order-none lg:col-span-3 lg:row-span-2 lg:pb-0 ">
           <div className="flex items-center justify-center">
             <img
               className="h-[200px] w-[290px] rounded"
