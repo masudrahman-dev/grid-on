@@ -67,7 +67,7 @@ const App = () => {
           <TaxReturn />
         </div>
 
-        <div className={clx("lg:col-span-3 lg:row-span-3", boxStyle)}>
+        <div className={clx("rounded bg-white lg:col-span-3 lg:row-span-3   ")}>
           <ProsMilestone />
         </div>
 
@@ -78,7 +78,7 @@ const App = () => {
         <div className="rounded   bg-white   p-base lg:col-span-5 lg:row-span-2  ">
           <TaxReturn2 />
         </div>
-    
+
         <div className={clx("group lg:col-span-full ", boxStyle)}>
           <TaxReturn3 />
         </div>
@@ -111,7 +111,7 @@ const App = () => {
               alt="Uploaded"
             />
           </div>
-        </div> 
+        </div>
       </div>
     </MainContainer>
   );
