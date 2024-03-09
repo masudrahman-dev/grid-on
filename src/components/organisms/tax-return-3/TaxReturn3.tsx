@@ -10,8 +10,8 @@ import ArrowLeft from "../../icons/arrow-left/ArrowLeft";
 
 const TaxReturn3 = () => {
   return (
-    <div className=" flex items-center justify-between gap-12">
-      <div className="flex items-center gap-6">
+    <div className=" flex flex-col items-center justify-between  lg:gap-12 gap-6 lg:flex-row">
+      <div className="flex items-center justify-between gap-6">
         <ArrowLeft className="transition-transform duration-100 group-hover:-translate-x-2 " />
         <div>
           <p className="min-w-[201px] text-base font-medium">
@@ -23,9 +23,9 @@ const TaxReturn3 = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center">
-        <Vl />
-        <div className="flex items-center space-x-6 ">
+      <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-0">
+        <Vl className="hidden lg:block" />
+        <div className="flex items-center justify-between space-x-6 ">
           <div className="">
             <p className="text-base font-medium">$1000</p>
             <span className="text-nowrap text-paragraph text-gray">
@@ -34,7 +34,7 @@ const TaxReturn3 = () => {
           </div>
           <PlusIcon />
         </div>
-        <Vl />
+        <Vl className="hidden lg:block" />
         <Button>Contact</Button>
       </div>
     </div>

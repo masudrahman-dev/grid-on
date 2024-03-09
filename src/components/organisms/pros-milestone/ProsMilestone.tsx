@@ -17,8 +17,8 @@ const ProsMilestone = () => {
 
         <ProjectsDone />
       </div>
-      <div className="relative flex-1">
-        <div className="absolute bottom-0 left-0 right-0 pt-[135px]">
+      <div className="lg:relative flex-1">
+        <div className="lg:absolute bottom-0 left-0 right-0 lg:pt-[135px] pt-12">
           <ProsMilestoneChart width={divWidth} />
         </div>
       </div>

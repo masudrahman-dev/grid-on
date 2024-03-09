@@ -7,7 +7,12 @@ const useMeasure = () => {
   useEffect(() => {
     const handleResize = () => {
       if (ref.current) {
-        setDivWidth(ref.current.offsetWidth);
+        if (window.innerWidth > 500) {
+  
+          setDivWidth(ref.current.offsetWidth + 10);
+        } else {
+          setDivWidth(ref.current.offsetWidth);
+        }
       }
     };
 

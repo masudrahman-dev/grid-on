@@ -7,10 +7,11 @@ import Vl from "../../atoms/vl/Vl";
 import PlusIcon from "../../icons/plus-icon/PlusIcon";
 import Button from "../../atoms/button/Button";
 
+
 const TaxReturn = () => {
   return (
-    <div className="flex items-center justify-between gap-12">
-      <div className="flex items-center gap-6">
+    <div className="flex flex-col lg:flex-row  items-center justify-between gap-4 lg:gap-12">
+      <div className="flex items-center lg:flex-row lg:gap-6">
         <Line3 />
         <div>
           <p className="min-w-[201px] text-base font-medium">
@@ -22,14 +23,14 @@ const TaxReturn = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center">
+      <div className="flex gap-4 lg:flex-row lg:gap-0 flex-col items-center">
         <Profile
           title={"Annette Black"}
           subtitle="New York, NY"
           isActive={true}
           subTitleIcon={<LocationIcon />}
         />
-        <Vl />
+        <Vl className="hidden lg:block" />
         <div className="flex items-center space-x-6 ">
           <div className="">
             <p className="text-base font-medium">$1000</p>
@@ -39,7 +40,7 @@ const TaxReturn = () => {
           </div>
           <PlusIcon />
         </div>
-        <Vl />
+        <Vl className="hidden lg:block" />
         <Button>Contact</Button>
       </div>
     </div>
