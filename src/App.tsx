@@ -84,7 +84,11 @@ const App = () => {
           <TaxReturn3 />
         </div>
 
-        <div className={clx("lg:col-span-4 ", boxStyle)}>
+        <div
+          className={clx(
+            "mx-2  rounded bg-white p-2 lg:col-span-4 lg:mx-0  lg:p-0",
+          )}
+        >
           <CertifiedAccountant />
         </div>
 
